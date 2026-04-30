@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ООО «Гепард» — Личный кабинет</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <img src="images/logo.svg" alt="Логотип ООО Гепард">
+        <span>ООО «Гепард»</span>
+    </div>
+    <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="login.html">Вход</a>
+        <a href="register.html">Регистрация</a>
+        <a href="dashboard.html">Личный кабинет</a>
+    </nav>
+</header>
+<main class="container">
+<section class="card">
+    <h1>Личный кабинет</h1>
+    <p>Здравствуйте, Иван Петров!</p>
+</section>
+
+<section class="card">
+    <h2>Создать заявку</h2>
+    <form>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="service">Услуга</label>
+                <select id="service">
+                    <option>Консультация</option>
+                    <option>Подготовка документов</option>
+                    <option>Сопровождение заявки</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Дата и время</label>
+                <input id="date" type="datetime-local">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="count">Количество</label>
+                <input id="count" type="number" value="1">
+            </div>
+            <div class="form-group">
+                <label for="payment">Способ оплаты</label>
+                <select id="payment">
+                    <option>Онлайн</option>
+                    <option>Карта</option>
+                    <option>Наличные</option>
+                </select>
+            </div>
+        </div>
+        <button class="button" type="button">Создать заявку</button>
+    </form>
+</section>
+
+<section class="card">
+    <h2>Мои заявки</h2>
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Услуга</th>
+                    <th>Дата и время</th>
+                    <th>Кол-во</th>
+                    <th>Оплата</th>
+                    <th>Статус</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Консультация</td>
+                    <td>12.05.2026 19:00</td>
+                    <td>1</td>
+                    <td>Онлайн</td>
+                    <td><span class="status new">Новая</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+</main>
+<footer class="footer">
+    <span>© 2026 ООО «Гепард». Все права защищены.</span>
+    <span>Нижний Новгород, Почаинская ул., д. 17в, к. 12</span>
+</footer>
+</body>
+</html>

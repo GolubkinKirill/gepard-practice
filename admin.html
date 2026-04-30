@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ООО «Гепард» — Администратор</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <img src="images/logo.svg" alt="Логотип ООО Гепард">
+        <span>ООО «Гепард»</span>
+    </div>
+    <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="login.html">Вход</a>
+        <a href="register.html">Регистрация</a>
+        <a href="dashboard.html">Личный кабинет</a>
+    </nav>
+</header>
+<main class="container">
+<section class="card">
+    <h1>Панель администратора</h1>
+    <p>Раздел предназначен для просмотра всех заявок и изменения их статусов.</p>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="filter">Фильтр по статусу</label>
+            <select id="filter">
+                <option>Все заявки</option>
+                <option>Новая</option>
+                <option>В работе</option>
+                <option>Выполнена</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="search">Поиск</label>
+            <input id="search" type="text" placeholder="Введите клиента или услугу">
+        </div>
+    </div>
+</section>
+
+<section class="card">
+    <h2>Все заявки</h2>
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Клиент</th>
+                    <th>Услуга</th>
+                    <th>Статус</th>
+                    <th>Действие</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Иванов Сергей Петрович</td>
+                    <td>Консультация</td>
+                    <td><span class="status new">Новая</span></td>
+                    <td><button class="button" type="button">Изменить</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+</main>
+<footer class="footer">
+    <span>© 2026 ООО «Гепард». Все права защищены.</span>
+    <span>Нижний Новгород, Почаинская ул., д. 17в, к. 12</span>
+</footer>
+</body>
+</html>
